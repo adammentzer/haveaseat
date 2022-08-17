@@ -1,0 +1,328 @@
+
+input[type=text]{
+  /* z-index:-1; */
+  position: relative;
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
+.buttons{
+  margin: auto;
+  display: flex;
+}
+
+footer{
+  font-family: Fredoka One;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items:center; 
+}
+
+.buttons input[type=reset], input[type=submit] {
+  background-color: #ab5bab; /* Green background */
+  border: 1px solid rgb(70, 17, 58); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  font-family: Fredoka One;
+}
+
+.buttons input[type=reset]:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.buttons:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.buttons input[type=reset]:hover {
+  background-color: #582158;
+}
+
+.buttons input[type=submit]:hover {
+  background-color: #582158;
+}
+
+#go_button:hover {
+  background-color: #582158;
+}
+
+/* input[type=button], input[type=submit], input[type=reset] {
+    position: relative;
+    background-color:#ab5bab;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Fredoka One;
+  } */
+
+p{
+  color:#FFFFFF;
+  font-family: Fredoka One;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+h1{
+  color: #ffffff;
+  font-family: Fredoka One;
+  text-align: center;
+  padding-top: 1em;
+  margin-top: 0;
+}
+
+h2{
+  color: #ffffff;
+  font-family: Fredoka One;
+  padding-left: 2.5em;
+}
+
+h3{
+  color: #ffffff;
+  font-family: Fredoka One;
+  /* padding-left: 2.5em; */
+}
+
+body{
+  top:50vh;
+  margin-top: 0;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  border: 1px solid transparent;
+  /* width: 100%;
+  position: absolute; */
+  /* background-color: #2b235e; */
+}
+
+label{
+  color: #ffffff;
+  font-family: Fredoka One;
+}
+
+#go_button{
+  background-color:#ab5bab;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Fredoka One;
+  position: relative;
+  margin:0 auto;
+  display:block;
+}
+#submit_button{
+  position: relative;
+  margin:0 auto;
+  display:inline;
+}
+
+#reset_button{
+  position: relative;
+  margin:0 auto;
+  display:inline;
+}
+
+#chairs_input{
+  color:black;
+}
+#tables_input{
+  color:black;
+}
+
+select {
+  width: 50%;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+} 
+
+.input_section{
+  margin: auto;
+  width: 50%;
+  padding-bottom: 1.5em;
+  /* padding: 10px; */
+}
+
+.method_section{
+  position: relative;
+  margin: auto;
+  width: 50%;
+  padding-bottom: 1.5em;
+}
+
+.buttons{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buttons input[type=submit], input[type=reset]{
+  margin: auto;
+}
+
+/* option{
+  color:blueviolet;
+} */
+/* first page ^^*/
+
+
+.res_body{
+  background-color: #2b235e;
+}
+
+.div_results{
+  margin: auto;
+  width: 50%;
+  padding: none;
+}
+
+.res_ul{
+  color: #ffffff;
+  font-family: Fredoka One;
+  font-weight: 400;
+}
+
+.div_results li{
+  color: #ffffff;
+  font-family: Fredoka One;
+  padding-left: 3em;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+/* second page ^^ */
+.area{
+  background: #2b235e;
+  /* #4e54c8;   */
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  width: 100%;
+  height:100vh;
+}
+
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+}

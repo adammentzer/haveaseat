@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale =1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="images/icon.png">
+    <!-- <link rel="stylesheet" type="text/css" href="css/html5reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet"> -->
+    <title>Have-a-Seat</title>
+    </head>
+    <main>
+    <body>
+        <!-- <header>
+          <nav>
+            <ul class="nav_links">
+                <li class="nav_item uppercase"><a href="index.html">Home</a></li>
+                <li class="nav_item"><a href="aboutme.html">About</a></li>
+                <li class="nav_item"><a href="newprojects.html">Projects</a></li>
+                <li class="nav_item"><a href="resume.html"> Resumé</a></li>
+                <li class="nav_item"><a href="misc.html">Miscellaneous</a></li>
+            </ul>
+            </nav>
+        </header> -->
+        <div class="area" >
+        <h1>Have-a-Seat</h1>
+          <ul class="circles">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+          </ul>
+        <p>Welcome! This site is intended to help you make seating arrangements
+          for large events like weddings, banquets, or dinners. Just enter in the 
+          names of each group and its members!
+        </p>
+
+        <h2>Enter groups here: </h2>
+
+        <form action="javascript:void(0);">
+          <div class = "input_section">
+            <label for="groupname">Group Name:</label><br>
+            <input type="text" id="groupname" name="groupname">
+          </div>
+
+          <div class = "input_section">
+            <label for="lname">Number of people in the group:</label><br>
+            <input type="text" id="num_group" name="num_group">
+          </div>
+
+          <div class = "input_section">
+            <label for="fname">Enter the names of group members, separated by a comma:</label><br>
+            <input type="text" id="members" name="members"><br>
+          </div>
+
+          <div class = "buttons">
+            <input type="submit" id = "submit_button" value="Submit" onclick="submitGroup(); toggler1();">
+            <input type="reset" id = "reset_button" value="Reset form" onclick = "toggler2()">
+          </div>
+        </form>
+
+
+        <!-- <p>Group name:</p>
+        <input type="text" id="groupname" value="">
+        <p>Number of people in the group:</p>
+        <input type="text" id="num_group" value="">
+        <p>Enter the names of the group members, separated by a comma:</p>
+        <input type="text" id="members" value="">
+        <br>
+        <br>
+        <button onclick="submitGroup()">Submit</button>
+        -->
+        <!-- <p id = "result"></p> -->
+
+        <!-- <h3>Choose a sorting method:</h3> -->
+        <div class = "method_section">
+          <p id = "result"></p>
+          <h3>Choose a sorting method:</h3>
+          <label for="methods">Method:</label>
+            <select name="methods" id="methods" onchange="view_controller()">
+              <option value="automatic">Automatic seating</option>
+              <option value="given_tables">Give the number of tables</option>
+              <option value="given_chairs">Give the number of chairs</option>
+              <option value="alone">Let large groups sit alone (suboptimal)</option>
+            </select>
+            <p hidden id = "prompt1">Number of chairs:</p>
+            <input hidden type="text" id="chairs_input" value="">
+            <p hidden id = "prompt2">Number of tables:</p>
+            <input hidden type="text" id="tables_input" value="">
+        
+          <br>
+          <br>
+          <button id="go_button">Go!</button>
+          <script src = "functions.js"></script>
+          <script type="text/javascript">
+            document.getElementById("go_button").onclick = function () {
+              if (all_groups.length != 0){
+                function_controller();
+                console.log("got here");
+                location.href = "results.html";
+              }
+            };
+          </script>
+        </div>
+
+        <!-- have input boxes show up that are equal in quantity to the number of people in the group -->
+        <!-- or should i have them enter all members based separated by a comma, this is probably easier -->
+
+      </div>
+        </body>
+    </main>
+</html>
